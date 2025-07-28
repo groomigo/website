@@ -1,1 +1,418 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c3{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c1"><span class="c0">&lt;!DOCTYPE html&gt;</span></p><p class="c1"><span class="c0">&lt;html lang=&quot;en&quot;&gt;</span></p><p class="c1"><span class="c0">&lt;head&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;title&gt;Groomigo | Mobile Pet Grooming&lt;/title&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;style&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; body {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-family: Arial, sans-serif;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background-color: #fdfdfd;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; header {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #f5c9c6;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; header h1 {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 2em;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; nav {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; gap: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #fff0f0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 10px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; section {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 40px 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; max-width: 900px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin: auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .hero {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #ffeaea;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .hero h2 {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .btn {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #fa8072;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 10px 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-radius: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; display: inline-block;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin: 10px 5px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .card {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #fff;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border: 1px solid #eee;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-radius: 12px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin: 20px 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; footer {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #eee;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-top: 40px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &lt;/style&gt;</span></p><p class="c1"><span class="c0">&lt;/head&gt;</span></p><p class="c1"><span class="c0">&lt;body&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;header&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;h1&gt;Groomigo&lt;/h1&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;Your Furbaby&rsquo;s Favorite Grooming Amigo&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/header&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;nav&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#services&quot;&gt;Services&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#pricing&quot;&gt;Pricing&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#booking&quot;&gt;Book Now&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/nav&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;section class=&quot;hero&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;h2&gt;Mobile Grooming. At Your Doorstep. Anytime.&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;Professional grooming with heart &mdash; no stress, no travel, just love.&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#booking&quot; class=&quot;btn&quot;&gt;Book a Session&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#ai-preview&quot; class=&quot;btn&quot;&gt;Try AI Grooming Preview&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;section id=&quot;services&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;h2&gt;Our Grooming Packages&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;h3&gt;Fresh Fur Start - $40&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Bath &amp; blow dry&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Nail trim&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Ear cleaning&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Light brushing&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;h3&gt;Pawsh Makeover - $70&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;All Fresh Fur Start services&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Full haircut&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Deshedding&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Sanitary trim&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;h3&gt;Royal Fur Treatment - $100&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;All Pawsh Makeover services&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Organic coat conditioning&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Aromatherapy &amp; paw balm&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;Pet-safe teeth cleaning&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;section id=&quot;booking&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;h2&gt;Book a Grooming Session&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;Let us know your pet&#39;s needs and we&rsquo;ll handle the rest!&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;View Booking Calendar&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;section id=&quot;contact&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;h2&gt;Contact Us&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;&#128222; +65 9880 3465&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;&#128231; hello@groomigo.sg&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;&#128205; Mobile Grooming - We Come to You!&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;&#128062; Follow us on Instagram &amp; Facebook @groomigo.sg&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;footer&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;p&gt;&amp;copy; 2025 Groomigo. All rights reserved.&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/footer&gt;</span></p><p class="c1"><span class="c0">&lt;/body&gt;</span></p><p class="c1"><span class="c0">&lt;/html&gt;</span></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsh & Go | Mobile Pet Grooming Singapore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Pawsh & Go</h1>
+                    <span class="tagline">Groom with love, delivered to your doorstep</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#story" class="nav-link">Our Story</a>
+                    <a href="#services" class="nav-link">Services & Pricing</a>
+                    <a href="#addons" class="nav-link">Add-Ons</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#shop" class="nav-link">Shop</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#booking" class="btn btn--primary nav-cta">Book Now</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Professional Mobile Pet Grooming</h1>
+            <p class="hero-subtitle">24/7 on-demand grooming with heart—creating a safe, stress-free space where pets feel loved and owners feel at ease</p>
+            <div class="hero-buttons">
+                <button class="btn btn--primary btn--lg" onclick="scrollToSection('booking')">Book a Session</button>
+                <button class="btn btn--outline btn--lg" onclick="openAIPreview()">Try AI Grooming Preview</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">
+                <span>🚐 Mobile Grooming Van</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Pawsh & Go?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-feature="mobile">
+                    <div class="feature-icon">🚐</div>
+                    <h3>Mobile Grooming Van</h3>
+                    <p>Fully-equipped van, right at your doorstep. 24/7 on-demand service for your convenience.</p>
+                </div>
+                <div class="feature-card" data-feature="livecam">
+                    <div class="feature-icon">📹</div>
+                    <h3>Live Cam</h3>
+                    <p>Safety & transparency during grooming session. Watch your pet being pampered in real-time.</p>
+                </div>
+                <div class="feature-card" data-feature="ai">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Grooming Styles</h3>
+                    <p>First-of-its-kind preview feature. See how your pet will look before the grooming begins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="story-content">
+                <h2 class="section-title">Our Story</h2>
+                <p class="story-text">At Pawsh & Go, we believe every pet deserves to be pampered like royalty. Our mission is to deliver professional, 24/7 grooming with heart—creating a safe, stress-free space where pets feel loved and owners feel at ease.</p>
+                <p class="story-text">With our state-of-the-art mobile grooming van and experienced team, we bring salon-quality care directly to your doorstep, making the grooming experience as comfortable as possible for your furry family members.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Grooming Packages</h2>
+            <p class="section-subtitle">All packages include our basic services: Nail Trimming, Oral Care, Deshedding Treatment, Simple Styling, and Organic products with sustainable packaging</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="fresh">
+                    <div class="service-header">
+                        <h3>Fresh Fur Start</h3>
+                        <div class="service-price">$40</div>
+                    </div>
+                    <ul class="service-features">
+                        <li>Bath & blow dry</li>
+                        <li>Nail trim</li>
+                        <li>Ear cleaning</li>
+                        <li>Light brushing</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width select-service" data-service="Fresh Fur Start" data-price="40">Select Package</button>
+                </div>
+
+                <div class="service-card service-card--popular" data-service="pawsh">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-header">
+                        <h3>Pawsh Makeover</h3>
+                        <div class="service-price">$70</div>
+                    </div>
+                    <ul class="service-features">
+                        <li>All Fresh Fur Start services</li>
+                        <li>Full haircut & styling</li>
+                        <li>De-shedding treatment</li>
+                        <li>Sanitary trim</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width select-service" data-service="Pawsh Makeover" data-price="70">Select Package</button>
+                </div>
+
+                <div class="service-card" data-service="royal">
+                    <div class="service-header">
+                        <h3>Royal Fur Treatment</h3>
+                        <div class="service-price">$100</div>
+                    </div>
+                    <ul class="service-features">
+                        <li>All Pawsh Makeover services</li>
+                        <li>Organic coat conditioning</li>
+                        <li>Aromatherapy & paw balm</li>
+                        <li>Pet-safe teeth cleaning</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width select-service" data-service="Royal Fur Treatment" data-price="100">Select Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Section -->
+    <section id="addons" class="addons">
+        <div class="container">
+            <h2 class="section-title">Premium Add-Ons</h2>
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <h4>Ear Cleaning</h4>
+                    <div class="addon-price">$8</div>
+                    <button class="btn btn--sm btn--outline add-addon" data-addon="Ear Cleaning" data-price="8">Add +</button>
+                </div>
+                <div class="addon-card">
+                    <h4>Flea/Tick Treatment</h4>
+                    <div class="addon-price">$22</div>
+                    <button class="btn btn--sm btn--outline add-addon" data-addon="Flea/Tick Treatment" data-price="22">Add +</button>
+                </div>
+                <div class="addon-card">
+                    <h4>Paw Balm</h4>
+                    <div class="addon-price">$6</div>
+                    <button class="btn btn--sm btn--outline add-addon" data-addon="Paw Balm" data-price="6">Add +</button>
+                </div>
+                <div class="addon-card">
+                    <h4>Pet Spa</h4>
+                    <div class="addon-price">$38</div>
+                    <button class="btn btn--sm btn--outline add-addon" data-addon="Pet Spa" data-price="38">Add +</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Pet Parents Say</h2>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Amazing service! My Golden Retriever Max looks fantastic and the groomer was so gentle. The live cam feature gave me peace of mind."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>Max (Golden Retriever)</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Convenient and professional. The mobile van has everything needed and the AI preview helped me choose the perfect style for Bella."</p>
+                    <div class="testimonial-author">
+                        <strong>David Lim</strong>
+                        <span>Bella (Poodle)</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best grooming service in Singapore! Charlie was so calm during the session. Will definitely book again."</p>
+                    <div class="testimonial-author">
+                        <strong>Michelle Wong</strong>
+                        <span>Charlie (Shih Tzu)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="previousTestimonial()">‹</button>
+                <button class="carousel-btn" onclick="nextTestimonial()">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <h2 class="section-title">Pet Care Products</h2>
+            <div class="shop-grid">
+                <div class="product-card">
+                    <div class="product-image">🦴</div>
+                    <h4>Dental Sticks</h4>
+                    <div class="product-price">$14</div>
+                    <button class="btn btn--sm btn--primary">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🥘</div>
+                    <h4>Premium Pet Food</h4>
+                    <div class="product-price">$30</div>
+                    <button class="btn btn--sm btn--primary">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🍖</div>
+                    <h4>Pet Snacks</h4>
+                    <div class="product-price">$10</div>
+                    <button class="btn btn--sm btn--primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Grooming Session</h2>
+            <div class="booking-form-container">
+                <form id="booking-form" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Owner Name</label>
+                            <input type="text" class="form-control" name="ownerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Pet Name</label>
+                            <input type="text" class="form-control" name="petName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Pet Breed</label>
+                            <input type="text" class="form-control" name="petBreed" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Pet Size</label>
+                            <select class="form-control" name="petSize" required>
+                                <option value="">Select size</option>
+                                <option value="small">Small (Under 25 lbs)</option>
+                                <option value="medium">Medium (25-60 lbs)</option>
+                                <option value="large">Large (60+ lbs)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Service Package</label>
+                            <select class="form-control" name="service" id="service-select" required>
+                                <option value="">Select service</option>
+                                <option value="Fresh Fur Start - $40">Fresh Fur Start - $40</option>
+                                <option value="Pawsh Makeover - $70">Pawsh Makeover - $70</option>
+                                <option value="Royal Fur Treatment - $100">Royal Fur Treatment - $100</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Preferred Time</label>
+                            <select class="form-control" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Payment Method</label>
+                        <select class="form-control" name="payment" required>
+                            <option value="">Select payment method</option>
+                            <option value="stripe">Credit Card (Stripe)</option>
+                            <option value="paynow">PayNow</option>
+                            <option value="grabpay">GrabPay</option>
+                            <option value="cash">Cash</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Special Requests</label>
+                        <textarea class="form-control" name="requests" rows="3" placeholder="Any special instructions for your pet's grooming session..."></textarea>
+                    </div>
+
+                    <div class="selected-items" id="selected-items" style="display: none;">
+                        <h4>Your Selection:</h4>
+                        <div id="selected-service"></div>
+                        <div id="selected-addons"></div>
+                        <div class="total-price" id="total-price"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--lg btn--full-width">Book Session</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+65 9880 3465</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@pawshandgo.sg</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💬</span>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p><a href="https://wa.me/6598803465" target="_blank">Chat with us</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Service Area</strong>
+                            <p>We come to you! Mobile grooming across Singapore</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com/pawshandgo.sg" target="_blank">Instagram @pawshandgo.sg</a>
+                        <a href="https://facebook.com/pawshandgo.sg" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Pawsh & Go</h3>
+                    <p>Groom with love, delivered to your doorstep</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#booking">Book Now</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pawsh & Go. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Preview Modal -->
+    <div id="ai-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>AI Grooming Style Preview</h3>
+                <button class="modal-close" onclick="closeAIPreview()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Experience our revolutionary AI grooming preview feature! Upload a photo of your pet and see different grooming styles before booking.</p>
+                <div class="ai-preview-placeholder">
+                    <span>🤖 AI Preview Feature Coming Soon!</span>
+                </div>
+                <button class="btn btn--primary" onclick="closeAIPreview()">Close Preview</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
